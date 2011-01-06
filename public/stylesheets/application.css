@@ -111,7 +111,7 @@ body, html {
 h1 {
   text-align: center;
   margin: 30px auto 0px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   padding: 10px 10px 15px;
   background: #555;
@@ -126,6 +126,10 @@ h1 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
+a {color:#000;}
+a:visited {color:#444;}
+a:hover {color:#fff; background-color:#444;}
 
 h1, article {
   -moz-box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
@@ -155,7 +159,7 @@ footer {
 .auth {
   float:right;
 }
-.auth a {
+.auth a.box {
   text-decoration:none;
 }
 a.icon {
@@ -168,32 +172,15 @@ a.github {background:url('/images/github_32.png');}
 a.google {background:url('/images/google_32.png');}
 a.openid {background:url('/images/openid_32.png');}
 
-.subscriptions {
+.items {
   list-style-type: none;
-  margin: 10px;
-  border: #eee solid 1px;
-  padding: 10px;
 }
 
-.subscriptions.active {
-}
-
-.subscriptions.inactive {
-  font-size: 0.9em;
-}
-
-.subscriptions li {
-  margin: 0 3px 3px 3px;
-  padding: 0.4em;
+.items li {
+  font-size:0.9em;
+  padding: 0.1em;
   padding-left: 1.5em;
 }
-.subscriptions li span {
-  position: absolute;
-  margin-top: -0.1em;
-  margin-left: -1.3em;
-}
-.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
-.ui-widget {font-size: 0.9em;}
 
 #url {
   font-size: 1.5em;
