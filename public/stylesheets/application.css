@@ -190,6 +190,12 @@ a.openid {background:url('/images/openid_32.png');}
   font-size:0.8em;
 }
 
+.new_item {
+  margin-top:1em;
+  padding-top:1em;
+  border-top:#ccc solid 1px;
+}
+
 #url {
   font-size: 1.5em;
   border: #eee solid 1px;

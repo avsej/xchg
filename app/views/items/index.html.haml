@@ -2,3 +2,8 @@
   %h2= date
   %ul{:class => 'items'}
     = render group
+
+- if signed_in?
+  - form_for @item, :html => {:multipart => true} do |f|
+    = f.file_field :attachment
+    = f.submit 'Upload'
