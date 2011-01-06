@@ -1,0 +1,21 @@
+%html{:lang => 'en'}
+  %head
+    %meta{:content => "text/html; charset=utf-8", :"http-equiv" => "Content-Type" }
+    = csrf_meta_tag
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+    %title xchg %your, %mine
+  %body
+    %h1 xchg %your, %mine
+    %article
+      = yield
+      %footer
+        .auth
+          - if signed_in?
+            = "Hi, #{current_user.name}."
+            Not you?
+            = link_to("Sign out", signout_path)
+          - else
+            %a{:href => '/auth/open_id', :title => "Sign in with OpenID", :class => 'icon openid'}
+            %a{:href => '/auth/google', :title => "Sign in with Google", :class => 'icon google'}
+            %a{:href => '/auth/github', :title => "Sign in with Github", :class => 'icon github'}

@@ -1,0 +1,202 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/* application styles */
+
+body, html {
+  background: #ccc;
+  font-family: "Lucida Grande", "Lucida Sans", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px auto 0px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 10px 15px;
+  background: #555;
+  color: white;
+  width: 700px;
+  border: 10px solid #444;
+  border-bottom: 0;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1, article {
+  -moz-box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
+}
+
+article {
+  background: white;
+  border: 10px solid #eee;
+  border-top: 0;
+  padding: 20px;
+  margin: 0px auto 40px;
+  width: 680px;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  min-height: 20px;
+}
+
+.auth {
+  float:right;
+}
+.auth a {
+  text-decoration:none;
+}
+a.icon {
+  display:block;
+  height:32px;
+  width:32px;
+  float:right;
+}
+a.github {background:url('/images/github_32.png');}
+a.google {background:url('/images/google_32.png');}
+a.openid {background:url('/images/openid_32.png');}
+
+.subscriptions {
+  list-style-type: none;
+  margin: 10px;
+  border: #eee solid 1px;
+  padding: 10px;
+}
+
+.subscriptions.active {
+}
+
+.subscriptions.inactive {
+  font-size: 0.9em;
+}
+
+.subscriptions li {
+  margin: 0 3px 3px 3px;
+  padding: 0.4em;
+  padding-left: 1.5em;
+}
+.subscriptions li span {
+  position: absolute;
+  margin-top: -0.1em;
+  margin-left: -1.3em;
+}
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+.ui-widget {font-size: 0.9em;}
+
+#url {
+  font-size: 1.5em;
+  border: #eee solid 1px;
+  width: 620px;
+}
