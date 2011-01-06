@@ -1,2 +1,4 @@
-%ul{:class => 'items'}
-  = render @items
+- @items.each do |date, group|
+  %h2= date
+  %ul{:class => 'items'}
+    = render group

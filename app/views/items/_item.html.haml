@@ -1,2 +1,3 @@
 %li
   = link_to(item.attachment_file_name, item.attachment.url)
+  %span{:class => 'meta'}= number_to_human_size(item.attachment_file_size)
