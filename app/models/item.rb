@@ -1,4 +1,5 @@
 class Item < ActiveRecord::Base
+  belongs_to :user
   validates_attachment_presence :attachment
   has_attached_file :attachment, :storage => :s3,
                     :url => ":s3_alias_url", :path => "/xchg/:sha1/:filename",
