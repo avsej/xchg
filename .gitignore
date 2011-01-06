@@ -1,4 +1,5 @@
 .bundle
-db/*.sqlite3
+vendor/bundle
+vendor/cache
 log/*.log
 tmp/**/*
