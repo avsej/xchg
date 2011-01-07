@@ -1,6 +1,7 @@
 Xchg::Application.routes.draw do
-  root :to => "items#index"
   match '/auth/:provider/callback' => 'authentications#create'
   match '/signout' => 'authentications#destroy'
-  resources :items
+  match '/items/(:public_token)' => 'items#index', :via => :get, :as => :items
+  match '/items' => 'items#create', :via => :post, :as => :upload
+  root :to => "items#index"
 end

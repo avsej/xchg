@@ -2,13 +2,17 @@ class ItemsController < ApplicationController
   respond_to :html
 
   def index
-    if current_user
-      @items = current_user.items.group_by{|i| i.attachment_updated_at.to_date}
+    if params[:public_token]
+      @items = User.find_by_public_token!(params[:public_token]).items
+    elsif current_user
+      @items = current_user.items
       @item = current_user.items.build
     else
-      @items = {}
+      @items = []
     end
-      respond_with(@items)
+
+    @items = @items.reject(&:new_record?).group_by{|i| i.attachment_updated_at.to_date}
+    respond_with(@items)
   end
 
   def create

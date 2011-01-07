@@ -1,9 +1,14 @@
+- if signed_in? && params[:public_token].nil?
+  %p{:class => 'share-notice'}
+    You can use following link to share your files:
+    = link_to nil, items_url(current_user.public_token)
+
 - @items.each do |date, group|
-  %h2= date
-  %ul{:class => 'items'}
+  %h2= date.to_s(:long)
+  %ol{:class => 'items'}
     = render group
 
-- if signed_in?
-  - form_for @item, :html => {:multipart => true} do |f|
+- if @item
+  = form_for @item, :url => upload_path, :html => {:multipart => true} do |f|
     = f.file_field :attachment
     = f.submit 'Upload'

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110106213700) do
+ActiveRecord::Schema.define(:version => 20110107084507) do
 
   create_table "items", :force => true do |t|
     t.string   "attachment_file_name"
@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(:version => 20110106213700) do
     t.integer  "attachment_file_size"
     t.datetime "attachment_updated_at"
     t.string   "sha1_digest"
-    t.boolean  "public",                  :default => false
     t.integer  "user_id"
   end
 
@@ -27,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20110106213700) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "public_token"
   end
 
 end

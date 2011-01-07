@@ -129,6 +129,7 @@ h1 {
 
 h2 {
   margin-bottom:0.5em;
+  margin-top:1em;
 }
 
 a {color:#000;}
@@ -176,14 +177,19 @@ a.github {background:url('/images/github_32.png');}
 a.google {background:url('/images/google_32.png');}
 a.openid {background:url('/images/openid_32.png');}
 
+.share-notice {
+  padding-bottom: 1em;
+  border-bottom:#ccc solid 1px;
+}
+
 .items {
-  list-style-type: none;
+  list-style-type: decimal;
+  padding-left: 1.5em;
 }
 
 .items li {
   font-size:0.9em;
-  padding: 0.1em;
-  padding-left: 1.5em;
+  padding: 0.1em 0;
 }
 .items li .meta {
   color:#444;
@@ -194,10 +200,4 @@ a.openid {background:url('/images/openid_32.png');}
   margin-top:1em;
   padding-top:1em;
   border-top:#ccc solid 1px;
-}
-
-#url {
-  font-size: 1.5em;
-  border: #eee solid 1px;
-  width: 620px;
 }
